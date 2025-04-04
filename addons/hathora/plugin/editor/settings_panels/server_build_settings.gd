@@ -9,17 +9,24 @@ const HathoraProjectSettings = preload("res://addons/hathora/plugin/hathora_proj
 var build_dir_path : String :
 	set(v):
 		build_dir_path = v
+		var car = build_dir_n.caret_column
 		build_dir_n.text = v
+		build_dir_n.caret_column = car
 	get: return build_dir_n.text
 
 var build_filename : String :
 	set(v):
 		build_filename = v
+		var car = build_filename_n.caret_column
 		build_filename_n.text = v
+		build_filename_n.caret_column = car
 	get: return build_filename_n.text
 
 var selected_preset: String:
-	get: return export_preset_n.get_item_text(export_preset_n.selected)
+	get: 
+		if export_preset_n.selected == -1:
+			return ""
+		return export_preset_n.get_item_text(export_preset_n.selected)
 
 var generate_tar_file: bool:
 	get: return generate_tar_n.button_pressed
@@ -66,8 +73,9 @@ func _on_project_settings_changed() -> void:
 	build_dir_path = HathoraProjectSettings.get_s("build_directory_path")
 	build_filename = HathoraProjectSettings.get_s("build_filename")
 	
+	
 func update_export_presets() -> void:
-	export_preset_n.clear()
+	clear_presets()
 
 	var file := ConfigFile.new()
 	if file.load(EXPORT_PRESETS_PATH) != OK:
@@ -104,7 +112,17 @@ func update_export_presets() -> void:
 		if not preset['architecture_supported']:
 			export_preset_n.set_item_text(export_preset_n.item_count - 1, preset['name'] + " (" + preset['architecture'] + " not supported)")
 	
-	export_preset_n.selected = export_preset_n.get_selectable_item()
+	var i = export_preset_n.get_selectable_item()
+	if i == -1:
+		export_preset_n.disabled = true
+		export_preset_n.tooltip_text = "No Linux presets found"
+		return
+	export_preset_n.selected = i
+
+func clear_presets() -> void:
+	export_preset_n.clear()
+	export_preset_n.tooltip_text = ""
+	export_preset_n.disabled = false
 
 func _on_generate_server_build_button_pressed():
 	if ! await _generate_server_build():
