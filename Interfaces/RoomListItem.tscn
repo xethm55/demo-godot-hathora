@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dwe7fkuurfyv2"]
 
-[ext_resource type="Script" path="res://Interfaces/RoomListItem.gd" id="1_cfvg6"]
+[ext_resource type="Script" uid="uid://ch1odqjexi1vj" path="res://Interfaces/RoomListItem.gd" id="1_cfvg6"]
 
 [node name="RoomListItem" type="HBoxContainer"]
 anchors_preset = 15

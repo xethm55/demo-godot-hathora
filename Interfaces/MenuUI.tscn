@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dbwosr4t1b4dt"]
 
-[ext_resource type="Script" path="res://Interfaces/MenuUI.gd" id="1_r6smn"]
+[ext_resource type="Script" uid="uid://y5g8f7wt2kna" path="res://Interfaces/MenuUI.gd" id="1_r6smn"]
 [ext_resource type="FontFile" uid="uid://drfoxbj8c8dgo" path="res://Fonts/cour.ttf" id="2_kyb1r"]
 
 [sub_resource type="Theme" id="Theme_dej7u"]

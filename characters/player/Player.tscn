@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://biuaot2gsacor"]
 
-[ext_resource type="Script" path="res://characters/player/Player.gd" id="1_5cuhk"]
+[ext_resource type="Script" uid="uid://cnirt283jhqv" path="res://characters/player/Player.gd" id="1_5cuhk"]
 [ext_resource type="PackedScene" uid="uid://cy36aygvs66pn" path="res://models/gobot/gobot_skin.tscn" id="1_41qnc"]
-[ext_resource type="Script" path="res://characters/player/PlayerInputSynchronizer.gd" id="3_ojfh7"]
+[ext_resource type="Script" uid="uid://d13lpuwqmtf3j" path="res://characters/player/PlayerInputSynchronizer.gd" id="3_ojfh7"]
 [ext_resource type="PackedScene" uid="uid://bmucxxjgnb5tl" path="res://characters/player/Chat/Interface.tscn" id="4_txpnq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_o5e0b"]

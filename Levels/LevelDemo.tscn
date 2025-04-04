@@ -1,7 +1,7 @@
 [gd_scene load_steps=24 format=3 uid="uid://j73id0flrihk"]
 
 [ext_resource type="Texture2D" uid="uid://d2i805m2xmvig" path="res://textures/chess_ground.png" id="1_bhk1s"]
-[ext_resource type="Script" path="res://Levels/LevelDemo.gd" id="1_io77q"]
+[ext_resource type="Script" uid="uid://bgbr6347r6axq" path="res://Levels/LevelDemo.gd" id="1_io77q"]
 [ext_resource type="Texture2D" uid="uid://ca5xp5jdikvln" path="res://Levels/Logomark color.png" id="4_dqdn4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1pxxm"]

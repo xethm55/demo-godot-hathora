@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cg151lnf6gm1e"]
 
 [ext_resource type="Texture2D" uid="uid://da581vjrihug0" path="res://characters/player/Chat/9rect_bubble.png" id="1_ech3o"]
-[ext_resource type="Script" path="res://characters/player/Chat/Bubble.gd" id="1_u45fy"]
+[ext_resource type="Script" uid="uid://c7hxkjlc18m5a" path="res://characters/player/Chat/Bubble.gd" id="1_u45fy"]
 [ext_resource type="Texture2D" uid="uid://cnrbqcki0ac2n" path="res://characters/player/Chat/line_bubble.png" id="2_kn5t5"]
 [ext_resource type="Texture2D" uid="uid://cma2w2umd5oii" path="res://characters/player/Chat/typing_bubble_0.png" id="3_bi2x8"]
 [ext_resource type="Texture2D" uid="uid://dt1knsvaxibw8" path="res://characters/player/Chat/typing_bubble_1.png" id="4_o3war"]

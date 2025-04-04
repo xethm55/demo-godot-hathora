@@ -1,7 +1,7 @@
 [gd_scene load_steps=60 format=3 uid="uid://cy36aygvs66pn"]
 
 [ext_resource type="PackedScene" uid="uid://kod0awm1ha4o" path="res://models/gobot/model/gobot.glb" id="1_qg1mb"]
-[ext_resource type="Script" path="res://models/gobot/gobot_skin.gd" id="1_rwke8"]
+[ext_resource type="Script" uid="uid://cpiyq13tx4d1m" path="res://models/gobot/gobot_skin.gd" id="1_rwke8"]
 [ext_resource type="Texture2D" uid="uid://cfdf62ci74tew" path="res://models/gobot/textures/closed_eyes.png" id="3_atmtp"]
 [ext_resource type="Texture2D" uid="uid://dq675fmt1rg8c" path="res://models/gobot/textures/open_eye.png" id="3_aysq5"]
 [ext_resource type="Material" uid="uid://div0enqs04w5j" path="res://models/gobot/materials/eye_mat.tres" id="4_p2r8e"]
@@ -1940,16 +1940,16 @@ tracks/28/keys = PackedFloat32Array(0, 1, 0.0298192, -0.0194152, -0.000472976, 0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_03he3"]
 _data = {
-"EdgeGrab": SubResource("Animation_o2ond"),
-"Fall": SubResource("Animation_ra5uo"),
-"Flip": SubResource("Animation_m4elg"),
-"Idle": SubResource("Animation_80s3p"),
-"Jump": SubResource("Animation_hoyaw"),
-"RESET": SubResource("Animation_c7pi5"),
-"Run": SubResource("Animation_5nggx"),
-"VictorySign": SubResource("Animation_vrhq2"),
-"Walk": SubResource("Animation_eg26g"),
-"WallSlide": SubResource("Animation_pii0g")
+&"EdgeGrab": SubResource("Animation_o2ond"),
+&"Fall": SubResource("Animation_ra5uo"),
+&"Flip": SubResource("Animation_m4elg"),
+&"Idle": SubResource("Animation_80s3p"),
+&"Jump": SubResource("Animation_hoyaw"),
+&"RESET": SubResource("Animation_c7pi5"),
+&"Run": SubResource("Animation_5nggx"),
+&"VictorySign": SubResource("Animation_vrhq2"),
+&"Walk": SubResource("Animation_eg26g"),
+&"WallSlide": SubResource("Animation_pii0g")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_g4wg5"]
