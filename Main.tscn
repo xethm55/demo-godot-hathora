@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://crexulohhsesl"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_euetv"]
+[ext_resource type="PackedScene" uid="uid://j73id0flrihk" path="res://Levels/LevelDemo.tscn" id="2_rk5ew"]
+[ext_resource type="Script" path="res://Network.gd" id="3_sor48"]
+[ext_resource type="PackedScene" uid="uid://dbwosr4t1b4dt" path="res://Interfaces/MenuUI.tscn" id="4_oherc"]
+[ext_resource type="Texture2D" uid="uid://6wuom2jo6qjr" path="res://textures/contol_panel.png" id="5_eok3y"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_euetv")
+
+[node name="LevelDemo" parent="." instance=ExtResource("2_rk5ew")]
+
+[node name="Players" type="Node3D" parent="."]
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 25, 35)
+
+[node name="Network" type="Node" parent="." node_paths=PackedStringArray("players_anchor")]
+script = ExtResource("3_sor48")
+players_anchor = NodePath("../Players")
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://characters/player/Player.tscn")
+spawn_path = NodePath("../Players")
+
+[node name="MenuUI" parent="." instance=ExtResource("4_oherc")]
+
+[node name="LobbyRefreshTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("5_eok3y")
+stretch_mode = 2
+
+[connection signal="timeout" from="LobbyRefreshTimer" to="." method="_on_lobby_refresh_timer_timeout"]
