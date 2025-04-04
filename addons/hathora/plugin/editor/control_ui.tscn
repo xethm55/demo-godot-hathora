@@ -1,21 +1,21 @@
 [gd_scene load_steps=17 format=3 uid="uid://cme6nmukjil8s"]
 
-[ext_resource type="Script" uid="uid://cmrhr4gutvuo2" path="res://addons/hathora/plugin/editor/control_ui.gd" id="1_1eov4"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/control_ui.gd" id="1_1eov4"]
 [ext_resource type="Texture2D" uid="uid://pjo82re3x7fd" path="res://addons/hathora/plugin/assets/HathoraConfigBanner.png" id="1_ov2ni"]
-[ext_resource type="Script" uid="uid://byyynd0waetfs" path="res://addons/hathora/plugin/editor/ascii_art_text_label.gd" id="3_0p138"]
-[ext_resource type="Script" uid="uid://be7tqdn1nn1sc" path="res://addons/hathora/plugin/editor/modules/project_exporter.gd" id="3_bp7wg"]
-[ext_resource type="Script" uid="uid://dlb847e6shn2l" path="res://addons/hathora/plugin/editor/section_toggle.gd" id="3_mi8w7"]
-[ext_resource type="Script" uid="uid://coe5vqq802tul" path="res://addons/hathora/plugin/editor/header_buttons.gd" id="3_uvapc"]
-[ext_resource type="Script" uid="uid://ddjpawjkuhvik" path="res://addons/hathora/plugin/editor/modules/tar_maker.gd" id="4_fftlc"]
-[ext_resource type="Script" uid="uid://dgl4nkcmdsr8u" path="res://addons/hathora/plugin/editor/settings_panels/developer_settings.gd" id="4_lffpm"]
-[ext_resource type="Script" uid="uid://dxul65kxvi4jo" path="res://addons/hathora/plugin/editor/modules/dockerfile_maker.gd" id="5_uqf2c"]
-[ext_resource type="Script" uid="uid://c50xwinhtwift" path="res://addons/hathora/plugin/editor/modules/build_deployer.gd" id="6_2m224"]
-[ext_resource type="Script" uid="uid://bg6fok48gc5p0" path="res://addons/hathora/plugin/editor/settings_panels/server_build_settings.gd" id="6_o00nj"]
-[ext_resource type="Script" uid="uid://8lgnqtxmmsid" path="res://addons/hathora/plugin/editor/settings_panels/deployment_settings.gd" id="8_kwcbp"]
-[ext_resource type="Script" uid="uid://c1ga7nqhlv4ou" path="res://addons/hathora/plugin/editor/settings_panels/room_settings.gd" id="9_lsqtf"]
-[ext_resource type="Script" uid="uid://pxqxds468bix" path="res://addons/hathora/plugin/editor/latest_deployment_info.gd" id="9_qjw1b"]
-[ext_resource type="Script" uid="uid://clbdblnec8q1h" path="res://addons/hathora/plugin/editor/latest_deployment_getter.gd" id="15_mejlx"]
-[ext_resource type="Script" uid="uid://chy8j5ng8c7rg" path="res://addons/hathora/plugin/client.gd" id="16_qf06x"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/ascii_art_text_label.gd" id="3_0p138"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/modules/project_exporter.gd" id="3_bp7wg"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/section_toggle.gd" id="3_mi8w7"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/header_buttons.gd" id="3_uvapc"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/modules/tar_maker.gd" id="4_fftlc"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/settings_panels/developer_settings.gd" id="4_lffpm"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/modules/dockerfile_maker.gd" id="5_uqf2c"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/modules/build_deployer.gd" id="6_2m224"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/settings_panels/server_build_settings.gd" id="6_o00nj"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/settings_panels/deployment_settings.gd" id="8_kwcbp"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/settings_panels/room_settings.gd" id="9_lsqtf"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/latest_deployment_info.gd" id="9_qjw1b"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/editor/latest_deployment_getter.gd" id="15_mejlx"]
+[ext_resource type="Script" path="res://addons/hathora/plugin/client.gd" id="16_qf06x"]
 
 [node name="Hathora" type="VBoxContainer"]
 anchors_preset = 9
@@ -227,6 +227,7 @@ text = "Latest Deployment"
 unique_name_in_owner = true
 custom_minimum_size = Vector2(2.08165e-12, 200)
 layout_mode = 2
+
 editable = false
 wrap_mode = 1
 autowrap_mode = 1

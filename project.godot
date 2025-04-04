@@ -22,10 +22,6 @@ HathoraSDK="*res://addons/hathora/sdk/client.gd"
 
 enabled=PackedStringArray("res://addons/hathora/plugin/plugin.cfg", "res://addons/hathora/sdk/plugin.cfg")
 
-[hathora]
-
-application_id="app-e15cf10c-64c5-43dc-8f2c-9cb83d1e81b2"
-
 [input]
 
 forward={
